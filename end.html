@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>End Page</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="end" class="flex-center flex-column">
+            <h1 id="finalScore">0</h1>
+            <form class="end-form-container">
+                <h2 id = "end-text">Enter your initials to save your score!</h2>
+                <input type="text" name="name" id="username" placeholder="Enter your initials">
+                <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)"disabled>Save</button>
+                <button class="btn" id="resetBtn" type="reset" onclick="reset(event)" disabled>Reset</button>
+            </form>
+            <a href="game.html" class="btn">Play Again</a>
+            <a href = "index.html" class = "btn"> Go Home </a>
+            
+        </div>
+    </div>
+    <script src ="end.js"></script>
+</body>
+</html>
